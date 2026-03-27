@@ -7,7 +7,7 @@ import {
   listPublishedDraws,
 } from "@/lib/data";
 import { formatCurrency } from "@/lib/utils";
-import { Badge, DrawNumberStrip, SectionIntro, StatCard, Surface } from "@/components/ui";
+import { DrawNumberStrip, SectionIntro, StatCard, Surface } from "@/components/ui";
 
 export default async function Home() {
   const [stats, charities, latestDraws, totals, credentials] = await Promise.all([
@@ -37,7 +37,6 @@ export default async function Home() {
       <section className="page-section">
         <div className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-end">
           <div className="reveal space-y-8">
-            <Badge tone="neutral">Selection-assignment demo with demo-mode integrations</Badge>
             <SectionIntro
               eyebrow="Golf x Giving"
               title="Subscription golf, monthly draws, and charity impact in one modern platform."
